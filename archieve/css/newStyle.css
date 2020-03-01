@@ -1,0 +1,131 @@
+/* ----- ADDITIONAL STYLES ----- */
+/* BY: JERWIN KEITH D. DELA CRUZ */
+/* ----------------------------- */
+
+
+/*------------------------------------*\
+	General
+\*------------------------------------*/
+
+html{
+	overflow-x: hidden;
+}
+
+/* no text selection */
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+						supported by Chrome and Opera */
+}
+
+.inline-text{
+	display: inline;
+}
+
+/*------------------------------------*\
+	Logo
+\*------------------------------------*/
+ 
+.navlogoMobile {
+	margin-top: 16px;
+	display: none;
+	
+}
+
+.navlogoTablet {
+	margin-top: 24px;
+	
+}
+
+.navlogoDesktop {
+	margin-top: 7px;
+	display: none;
+}
+
+/*-- SHOW LOGO MOBILE --*/
+@media screen and (max-width: 768px) and (min-width: 200px) {
+
+	div.navlogoMobile {
+		display: block;
+	}
+
+	div.navlogoTablet {
+		display: none;
+	}
+
+	div.navlogoDesktop {
+		display: none;
+	}
+
+}
+
+/*-- SHOW LOGO TABLET --*/
+@media screen and (max-width: 997px) and (min-width: 768px) {
+
+	div.navlogoMobile {
+		display: none;
+	}
+
+	div.navlogoTablet {
+		display: block;
+	}
+
+	div.navlogoDesktop {
+		display: none;
+	}
+}
+
+/*-- SHOW LOGO DESKTOP --*/
+@media screen and (min-width: 997px) {
+
+	div.navlogoMobile {
+		display: none;
+	}
+
+	div.navlogoTablet {
+		display: none;
+	}
+
+	div.navlogoDesktop {
+		display: block;
+	}
+}
+
+/*------------------------------------*\
+	Home
+\*------------------------------------*/
+
+.home_cotainer{
+	
+	padding-top: 95px;
+	padding-bottom: 95px;
+	color: #FFFFFF;
+}
+
+.lead{
+	color: #FFFFFF;
+}
+
+.our_home_area {
+  background: url("../images/achievments_bg.jpg") no-repeat fixed;
+  background-position: center;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.our_home_area:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}

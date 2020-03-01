@@ -1,0 +1,561 @@
+/* ----- ADDITIONAL STYLES ----- */
+/* BY: JERWIN KEITH D. DELA CRUZ */
+/* ----------------------------- */
+
+
+/*------------------------------------*\
+	General
+\*------------------------------------*/
+
+html{
+	overflow-x: hidden;
+}
+
+/* no text selection */
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+						supported by Chrome and Opera */
+}
+
+.hidden { 
+	display: none; 
+
+}
+
+.text-center{
+	text-align: center;
+}
+
+.inline-text{
+	display: inline;
+}
+
+.centerio{
+	text-align: center;
+}
+
+.justify-text {
+	text-align: justify;
+	color: #000000
+}
+
+.link-activated{
+	color: #FF0000;
+	display: inline;
+}
+
+/*Text Effect Header*/
+.headcrum-text{
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.headcrum-text:hover{
+	color: #FF0000;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.content-black
+{
+	font: 700 14px "Roboto", sans-serif;
+	color: #000000;
+}
+
+.linkage
+{
+   color: #555555;
+   text-decoration: none;
+}
+.linkage:visited
+{
+   color: #555555;
+}
+.linkage:active
+{
+   color: #555555;
+}
+.linkage:hover
+{
+   color: #FF0000;
+   text-decoration: none;
+}
+
+.linkageF
+{
+   color: #333333;
+   text-decoration: none;
+}
+.linkageF:visited
+{
+   color: #333333;
+}
+.linkageF:active
+{
+   color: #333333;
+}
+.linkageF:hover
+{
+   color: #FF0000;
+   text-decoration: none;
+}
+
+input[type=number].phoneNumber::-webkit-inner-spin-button, 
+input[type=number].phoneNumber::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+  
+}
+
+.butnow {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  text-shadow: 1px 1px 3px #e61515;
+  -webkit-box-shadow: 0px 1px 3px #ed1313;
+  -moz-box-shadow: 0px 1px 3px #ed1313;
+  box-shadow: 0px 1px 3px #ed1313;
+  border: 0;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 23px;
+  background: #333333;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.butnow:hover {
+  background: #ff0000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/*------------------------------------*\
+	Logo
+\*------------------------------------*/
+ 
+.navlogoMobile {
+	margin-top: 16px;
+	display: none;
+	
+}
+
+.navlogoTablet {
+	margin-top: 24px;
+	
+}
+
+.navlogoDesktop {
+	margin-top: 7px;
+	display: none;
+}
+
+/*-- SHOW LOGO MOBILE --*/
+@media screen and (max-width: 768px) and (min-width: 200px) {
+
+	div.navlogoMobile {
+		display: block;
+	}
+
+	div.navlogoTablet {
+		display: none;
+	}
+
+	div.navlogoDesktop {
+		display: none;
+	}
+
+}
+
+/*-- SHOW LOGO TABLET --*/
+@media screen and (max-width: 997px) and (min-width: 768px) {
+
+	div.navlogoMobile {
+		display: none;
+	}
+
+	div.navlogoTablet {
+		display: block;
+	}
+
+	div.navlogoDesktop {
+		display: none;
+	}
+}
+
+/*-- SHOW LOGO DESKTOP --*/
+@media screen and (min-width: 997px) {
+
+	div.navlogoMobile {
+		display: none;
+	}
+
+	div.navlogoTablet {
+		display: none;
+	}
+
+	div.navlogoDesktop {
+		display: block;
+	}
+}
+
+/*------------------------------------*\
+	Home
+\*------------------------------------*/
+
+.home_cotainer{
+	
+	padding-top: 95px;
+	padding-bottom: 95px;
+	color: #FFFFFF;
+}
+
+.headerLead h1{
+	font-weight: bold;
+	font-size: 34px;
+}
+
+.lead{
+	color: #FFFFFF;
+}
+
+.impa_cotainer{
+	margin-top: 65px;
+}
+
+.our_home_area {
+  background: url("../images/achievments_bg.jpg") no-repeat fixed;
+  background-position: center;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.our_home_area:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+
+.pointedImageLink{
+  cursor: pointer;
+}
+
+.linkerio{
+  display: inline;
+}
+
+.linkerio img {
+  display: inline;
+  transition: transform .5s, filter 1.5s ease-in-out;
+}
+
+.linkerio:hover img {
+  display: inline;
+  
+  transform: scale(1.1);
+}
+
+/*------------------------------------*\
+	Go to Top
+\*------------------------------------*/
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  z-index: 1000;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(254, 1, 0, 0.8) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+  transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+}
+
+.cd-top.cd-top--show,
+.cd-top.cd-top--fade-out,
+.cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+}
+
+.cd-top.cd-top--show {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-top--fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+.cd-top:hover {
+  background-color: #FF0000;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+/*------------------------------------*\
+	About Us
+\*------------------------------------*/
+
+
+
+.about-text-main {
+  font: 400 14px/26px "Roboto", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-right: 35px;
+  z-index: 20;
+}
+
+.about-header-down{
+	padding-bottom: 30px;
+}
+
+.about-mobile {
+    padding-top: 20px;
+	
+}
+
+
+.mar-desktop {
+    margin-top: 40px;
+}
+
+.mar-mobile {
+    margin-top: 0px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1260px) and (min-width: 200px) {
+  
+  div.about-mobile {
+    display: block;
+  }
+
+  div.about-desktop {
+    display: none;
+  }
+  
+}
+
+/* Desktop */
+@media screen and (min-width: 1260px) {
+	
+  div.about-mobile {
+    display: none;
+  }
+
+  div.about-desktop {
+    display: block;
+  }
+  
+}
+
+/*--------------------------------------------------*/
+.our_team_area_TU {
+  background-color: #902924;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 100px;
+}
+.our_team_area_TU:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.our_team_area_TU .tittle_TU h2 {
+  color: #fff;
+}
+.our_team_area_TU .tittle_TU h4 {
+  color: #fefefe;
+}
+.our_team_area_TU .achievments_row {
+  padding-top: 60px;
+}
+.our_team_area_TU .achievments_row .completed {
+  text-align: center;
+  border-right: 3px solid #fff;
+}
+.our_team_area_TU .achievments_row .completed:last-child {
+  border: 0;
+}
+.our_team_area_TU .achievments_row .completed i {
+  font-size: 30px;
+  color: #fff;
+  display: block;
+  padding-top: 10px;
+}
+.our_team_area_TU .achievments_row .completed .counter {
+  font: 700 40px "Roboto", sans-serif;
+  color: #ff0000;
+  display: block;
+  padding-top: 23px;
+}
+.our_team_area_TU .achievments_row .completed h6 {
+  font: 400 14px "Roboto", sans-serif;
+  color: #fff;
+  padding-top: 20px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.our_team_area_TU .seperate-bot{
+	padding-bottom: 35px;
+}
+
+.our_team_area_TU a{
+	color: #EAE3E3;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.our_team_area_TU a:hover{
+	color: #FF0000;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+
+.team_inner_area {
+	width: 100%;
+	
+}
+.team-map_area {
+	border: none;
+	height: auto;
+	max-width: 100%;
+	width: auto;
+}
+
+/*------------------------------------*\
+	Alert
+\*------------------------------------*/
+
+.alert-float {
+    
+	text-align: left;
+	position: fixed;
+
+	z-index: 9;
+    bottom: 0;
+    left: 0;
+  }
+	
+.gender-line{
+	padding-top: 12px;
+	
+}
+
+
+/*------------------------------------*\
+	Image Gallery
+\*------------------------------------*/
+
+.rowa {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columna {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.columna img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columna {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columna {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*------------------------------------*\
+	Packages
+\*------------------------------------*/
+
+.tableStyle{
+	
+	border-style:solid;
+}
+
+td, th {
+  border: 2px solid #808080;
+}
+
+.table-heading{
+	font-weight: bold;
+	background-color: #FF0000;
+	color: #FFFFFF;
+}
+
+.table-child{
+	background-color: #FFFFFF;
+	color: #000000;
+}
